@@ -1,5 +1,5 @@
 {
-  "name": "myreact-app9route",
+  "name": "myreact-app9route-ex",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -36,10 +36,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy":"http://localhost:80",
-
-  "_comment1" : "SOP (Same Origin Policy, 동일 출처 정책)",
-  "_comment2" : "다른 출처의 리소스가 필요하다면 CORS 사용",
-  "_comment3" : "A server <-> B server는 CORS 에러가 나지 않는다."
+  "proxy":"http://localhost:80"
 }
-
