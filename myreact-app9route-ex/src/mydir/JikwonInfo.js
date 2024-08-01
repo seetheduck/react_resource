@@ -5,7 +5,7 @@ const JikwonInfo = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [jikwons, setJikwons] = useState([]);
 
-  // useEffect 훅: 컴포넌트가 마운트될 때 실행
+  // useEffect Hook : 컴포넌트가 마운트될 때 실행
   useEffect(() => {
     fetch("/web_react/abc.jsp", { method: "GET" })
       .then((res) => {
@@ -31,11 +31,9 @@ const JikwonInfo = () => {
 
   if (error) {
     return <div>에러 : {error.message}</div>;
-  } 
-  else if (!isLoaded) {
+  } else if (!isLoaded) {
     return <div>자료 로딩중...</div>;
-  }
-  else {
+  } else {
     return (
       <table>
         <thead>
